@@ -7,7 +7,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func Test_getBatch(t *testing.T) {
+func Test_getButch(t *testing.T) {
 	type args struct {
 		n    int64
 		pool int64
