@@ -24,7 +24,6 @@ func getBatch(n int64, pool int64) (res []user) {
 		go func(index int64) {
 			ch <- getOne(index)
 			res[index] = <-ch
-			close(ch)
 			waitingGroup.Done()
 		}(i)
 
